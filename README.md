@@ -1,2 +1,2 @@
-# pineal_docker_image
+# Pineal_docker_image
 Alpine++
