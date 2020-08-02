@@ -14,10 +14,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Hadolint Action
-      uses: brpaz/hadolint-action@v1.1.0
-      with:
-        dockerfile: Dockerfile
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag blairy/pineal:$(date +%s)
   
