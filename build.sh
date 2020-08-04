@@ -57,7 +57,7 @@ git () {
     git="/usr/bin/git -C /home/docker/pineal_docker_image"
     $git pull git@github.com:blairjames/pineal_docker_image.git >> $log || except "git pull failed!"
     $git add --all >> $log || except "git add failed!"
-    $git commit -a -m 'Automatic build $timestp' >> $log || except "git commit failed!"
+    $git commit -a -m 'Automatic build $(timestamp)' >> $log || except "git commit failed!"
     $git push >> $log || except "git push failed!"
 }
 
