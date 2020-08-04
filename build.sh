@@ -33,7 +33,7 @@ logger "Starting Build.\n"
 
 
 # Build the image using timestamp as tag.
-if /usr/bin/docker build /home/docker/pineal_docker_image -t docker.io/blairy/pineal_docker_image:$timestp >> $log; then
+if /usr/bin/docker build /home/docker/pineal_docker_image -t docker.io/blairy/pineal:$timestp >> $log; then
     logger "Build completed successfully.\n\n"
 else
     logger "Build FAILED!! Aborting.\n\n"
@@ -54,7 +54,7 @@ fi
 # TODO: Make this a function and add better exception management.. 
 # only run this if the SSH function is successful.
 git () {
-    git="/usr/bin/git -C /home/docker/python_3.8.5/"
+    git="/usr/bin/git -C /home/docker/pineal_docker_image"
     $git pull git@github.com:blairjames/pineal_docker_image.git >> $log || except "git pull failed!"
     $git add --all >> $log || except "git add failed!"
     $git commit -a -m 'Automatic build $timestp' >> $log || except "git commit failed!"
@@ -71,7 +71,7 @@ fi
 
 
 # Push the new tag to Dockerhub.
-if docker push blairy/pineal_docker_image:$timestp >> $log; then 
+if docker push blairy/pineal:$timestp >> $log; then 
     logger "Docker push completed successfully.\n\n"
 else
     logger "Docker push FAILED!!\n\n"

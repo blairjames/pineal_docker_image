@@ -78,3 +78,979 @@ b343ddcee16c: Layer already exists
 
 
 20200803_101315 - All completed successfully
+20200803_102001 - Starting Build.
+
+Sending build context to Docker daemon  138.8kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_102001
+20200803_102001 - Build completed successfully.
+
+
+20200803_102004 - git
+[master d4f8343] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200803_102009 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal_docker_image]
+f67308b15205: Preparing
+b343ddcee16c: Preparing
+50644c29ef5a: Preparing
+50644c29ef5a: Layer already exists
+f67308b15205: Layer already exists
+b343ddcee16c: Layer already exists
+20200803_102001: digest: sha256:ece07ae48cb27ae822fe6846b6581565bbe0e90576ca2a7ab4ddf4c6b1a01fd8 size: 950
+20200803_102015 - Docker push completed successfully.
+
+
+20200803_102015 - All completed successfully
+20200803_112001 - Starting Build.
+
+Sending build context to Docker daemon  139.8kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_112001
+20200803_112002 - Build completed successfully.
+
+
+20200803_112005 - git
+[master 9608c49] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200803_112010 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_112011 - Docker push FAILED!!
+
+
+20200803_122001 - Starting Build.
+
+Sending build context to Docker daemon  140.8kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_122001
+20200803_122002 - Build completed successfully.
+
+
+20200803_122005 - git
+[master c00d094] Automatic build $timestp
+ 1 file changed, 26 insertions(+)
+20200803_122010 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_122011 - Docker push FAILED!!
+
+
+20200803_132001 - Starting Build.
+
+Sending build context to Docker daemon  141.3kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_132001
+20200803_132002 - Build completed successfully.
+
+
+20200803_132005 - git
+[master 37c17d6] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200803_132011 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_132012 - Docker push FAILED!!
+
+
+20200803_142001 - Starting Build.
+
+Sending build context to Docker daemon  142.3kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_142001
+20200803_142005 - Build completed successfully.
+
+
+20200803_142008 - git
+[master 5cb3329] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200803_142013 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_142014 - Docker push FAILED!!
+
+
+20200803_152001 - Starting Build.
+
+Sending build context to Docker daemon  143.4kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_152001
+20200803_152002 - Build completed successfully.
+
+
+20200803_152005 - git
+[master f403433] Automatic build $timestp
+ 1 file changed, 27 insertions(+)
+20200803_152010 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_152012 - Docker push FAILED!!
+
+
+20200803_162001 - Starting Build.
+
+Sending build context to Docker daemon  143.9kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_162001
+20200803_162001 - Build completed successfully.
+
+
+20200803_162006 - git
+[master e62a645] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200803_162012 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_162013 - Docker push FAILED!!
+
+
+20200803_172001 - Starting Build.
+
+Sending build context to Docker daemon  144.9kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_172001
+20200803_172002 - Build completed successfully.
+
+
+20200803_172005 - git
+[master 0089888] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200803_172011 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_172013 - Docker push FAILED!!
+
+
+20200803_182001 - Starting Build.
+
+Sending build context to Docker daemon  145.9kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_182001
+20200803_182001 - Build completed successfully.
+
+
+20200803_182006 - git
+[master 4d48183] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200803_182012 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_182013 - Docker push FAILED!!
+
+
+20200803_192001 - Starting Build.
+
+Sending build context to Docker daemon  146.9kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_192001
+20200803_192001 - Build completed successfully.
+
+
+20200803_192006 - git
+[master 5fa91d6] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200803_192012 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_192013 - Docker push FAILED!!
+
+
+20200803_202001 - Starting Build.
+
+Sending build context to Docker daemon  147.5kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_202001
+20200803_202001 - Build completed successfully.
+
+
+20200803_202005 - git
+[master 24335ac] Automatic build $timestp
+ 1 file changed, 27 insertions(+)
+20200803_202012 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_202013 - Docker push FAILED!!
+
+
+20200803_212001 - Starting Build.
+
+Sending build context to Docker daemon  148.5kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_212001
+20200803_212001 - Build completed successfully.
+
+
+20200803_212005 - git
+[master aec0baf] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200803_212011 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_212012 - Docker push FAILED!!
+
+
+20200803_222001 - Starting Build.
+
+Sending build context to Docker daemon  149.5kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_222001
+20200803_222002 - Build completed successfully.
+
+
+20200803_222005 - git
+[master e025581] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200803_222011 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_222012 - Docker push FAILED!!
+
+
+20200803_232001 - Starting Build.
+
+Sending build context to Docker daemon    150kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200803_232001
+20200803_232001 - Build completed successfully.
+
+
+20200803_232005 - git
+[master 0752c73] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200803_232010 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200803_232012 - Docker push FAILED!!
+
+
+20200804_002001 - Starting Build.
+
+Sending build context to Docker daemon    151kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_002001
+20200804_002001 - Build completed successfully.
+
+
+20200804_002007 - git
+[master 27e7711] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200804_002012 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_002014 - Docker push FAILED!!
+
+
+20200804_012001 - Starting Build.
+
+Sending build context to Docker daemon  152.1kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_012001
+20200804_012001 - Build completed successfully.
+
+
+20200804_012005 - git
+[master 39a1fcb] Automatic build $timestp
+ 1 file changed, 27 insertions(+)
+20200804_012011 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_012012 - Docker push FAILED!!
+
+
+20200804_022001 - Starting Build.
+
+Sending build context to Docker daemon  152.6kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_022001
+20200804_022001 - Build completed successfully.
+
+
+20200804_022005 - git
+[master 4310da7] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200804_022011 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_022012 - Docker push FAILED!!
+
+
+20200804_032001 - Starting Build.
+
+Sending build context to Docker daemon  153.6kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_032001
+20200804_032001 - Build completed successfully.
+
+
+20200804_032006 - git
+[master 9d0cc9f] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200804_032011 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_032012 - Docker push FAILED!!
+
+
+20200804_042001 - Starting Build.
+
+Sending build context to Docker daemon  154.6kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_042001
+20200804_042002 - Build completed successfully.
+
+
+20200804_042006 - git
+[master 84379e5] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200804_042012 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_042013 - Docker push FAILED!!
+
+
+20200804_052001 - Starting Build.
+
+Sending build context to Docker daemon  155.6kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_052001
+20200804_052001 - Build completed successfully.
+
+
+20200804_052006 - git
+[master 4634c8b] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200804_052012 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_052013 - Docker push FAILED!!
+
+
+20200804_062001 - Starting Build.
+
+Sending build context to Docker daemon  156.2kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_062001
+20200804_062001 - Build completed successfully.
+
+
+20200804_062005 - git
+[master e26dba1] Automatic build $timestp
+ 1 file changed, 27 insertions(+)
+20200804_062012 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_062014 - Docker push FAILED!!
+
+
+20200804_072001 - Starting Build.
+
+Sending build context to Docker daemon  157.2kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_072001
+20200804_072001 - Build completed successfully.
+
+
+20200804_072006 - git
+[master 2de4367] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200804_072012 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_072013 - Docker push FAILED!!
+
+
+20200804_082001 - Starting Build.
+
+Sending build context to Docker daemon  158.2kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_082001
+20200804_082001 - Build completed successfully.
+
+
+20200804_082005 - git
+[master e1ee899] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200804_082011 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_082013 - Docker push FAILED!!
+
+
+20200804_092001 - Starting Build.
+
+Sending build context to Docker daemon  158.7kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_092001
+20200804_092001 - Build completed successfully.
+
+
+20200804_092005 - git
+[master 2ccdaac] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200804_092011 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_092012 - Docker push FAILED!!
+
+
+20200804_102001 - Starting Build.
+
+Sending build context to Docker daemon  159.7kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_102001
+20200804_102001 - Build completed successfully.
+
+
+20200804_102005 - git
+[master 0ab81fa] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200804_102011 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_102013 - Docker push FAILED!!
+
+
+20200804_112001 - Starting Build.
+
+Sending build context to Docker daemon  160.8kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_112001
+20200804_112001 - Build completed successfully.
+
+
+20200804_112005 - git
+[master 68f856f] Automatic build $timestp
+ 1 file changed, 27 insertions(+)
+20200804_112010 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_112012 - Docker push FAILED!!
+
+
+20200804_122001 - Starting Build.
+
+Sending build context to Docker daemon  161.3kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_122001
+20200804_122001 - Build completed successfully.
+
+
+20200804_122005 - git
+[master bc2fe87] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200804_122012 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_122013 - Docker push FAILED!!
+
+
+20200804_132001 - Starting Build.
+
+Sending build context to Docker daemon  162.3kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_132001
+20200804_132002 - Build completed successfully.
+
+
+20200804_132005 - git
+[master d118fbc] Automatic build $timestp
+ 1 file changed, 28 insertions(+)
+20200804_132011 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_132012 - Docker push FAILED!!
+
+
+20200804_133644 - Starting Build.
+
+Sending build context to Docker daemon  163.3kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_133644
+20200804_133645 - Build completed successfully.
+
+
+20200804_133647 - git
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+20200804_133647 - git
+20200804_133650 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_133652 - Docker push FAILED!!
+
+
+20200804_133710 - Starting Build.
+
+Sending build context to Docker daemon  164.4kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal_docker_image:20200804_133710
+20200804_133710 - Build completed successfully.
+
+
+20200804_133713 - git
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+20200804_133713 - git
+20200804_133716 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+20200804_133718 - Docker push FAILED!!
+
+
+20200804_134022 - Starting Build.
+
+Sending build context to Docker daemon  164.9kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal:20200804_134022
+20200804_134022 - Build completed successfully.
+
+
+20200804_134022 - git
+20200804_134022 - git
+20200804_134022 - git
+20200804_134022 - git
+20200804_134022 - git failed!!
+The push refers to repository [docker.io/blairy/pineal]
+f67308b15205: Preparing
+b343ddcee16c: Preparing
+50644c29ef5a: Preparing
+50644c29ef5a: Layer already exists
+b343ddcee16c: Layer already exists
+f67308b15205: Layer already exists
+20200804_134022: digest: sha256:ece07ae48cb27ae822fe6846b6581565bbe0e90576ca2a7ab4ddf4c6b1a01fd8 size: 950
+20200804_134030 - Docker push completed successfully.
+
+
+20200804_134030 - All completed successfully
+20200804_134114 - Starting Build.
+
+Sending build context to Docker daemon  166.4kB
+Step 1/5 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/5 : RUN     apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/5 : RUN     apk add --no-cache     curl     util-linux
+ ---> Using cache
+ ---> 2617868153a5
+Step 4/5 : RUN     alias c="clean" &&     alias l="ls -lrth"
+ ---> Using cache
+ ---> 3333798ec98c
+Step 5/5 : ENTRYPOINT ["/bin/sh"]
+ ---> Using cache
+ ---> 9c5655a6ffda
+Successfully built 9c5655a6ffda
+Successfully tagged blairy/pineal:20200804_134114
+20200804_134114 - Build completed successfully.
+
+
+Already up to date.
