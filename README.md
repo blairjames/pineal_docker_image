@@ -1,2 +1,2 @@
 # Pineal_docker_image
-Alpine++
+Latest Alpine, fully patched with some extra tools and tweaks.
