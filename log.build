@@ -34960,3 +34960,77 @@ Successfully tagged blairy/pineal:20200917_002401
 
 
 Already up to date.
+[master aa15f96] Automatic build 20200917_002404
+ 1 file changed, 35 insertions(+)
+20200917_002410 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+c078a0893e6e: Preparing
+b343ddcee16c: Preparing
+50644c29ef5a: Preparing
+c078a0893e6e: Layer already exists
+b343ddcee16c: Layer already exists
+50644c29ef5a: Layer already exists
+20200917_002401: digest: sha256:90d125ff41eb6b8164c07b765ba32142d08df18647ec5984cee22db84bc1677a size: 950
+20200917_002416 - Docker push completed successfully.
+
+
+20200917_002416 - All completed successfully
+20200917_005553 - Starting Build.
+
+20200917_005553 - Build FAILED!! Aborting.
+
+
+20200917_005558 - Starting Build.
+
+Sending build context to Docker daemon  38.18MB
+Step 1/4 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/4 : RUN apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/4 : RUN apk add --no-cache     curl     git     util-linux     bash
+ ---> Running in 241b58cb82f9
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/community/x86_64/APKINDEX.tar.gz
+(1/26) Installing ncurses-terminfo-base (6.2_p20200523-r0)
+(2/26) Installing ncurses-libs (6.2_p20200523-r0)
+(3/26) Installing readline (8.0.4-r0)
+(4/26) Installing bash (5.0.17-r0)
+Executing bash-5.0.17-r0.post-install
+(5/26) Installing ca-certificates (20191127-r4)
+(6/26) Installing nghttp2-libs (1.41.0-r0)
+(7/26) Installing libcurl (7.69.1-r1)
+(8/26) Installing curl (7.69.1-r1)
+(9/26) Installing expat (2.2.9-r1)
+(10/26) Installing pcre2 (10.35-r0)
+(11/26) Installing git (2.26.2-r0)
+(12/26) Installing libblkid (2.35.2-r0)
+(13/26) Installing blkid (2.35.2-r0)
+(14/26) Installing libcap-ng (0.7.10-r1)
+(15/26) Installing setpriv (2.35.2-r0)
+(16/26) Installing libmount (2.35.2-r0)
+(17/26) Installing libsmartcols (2.35.2-r0)
+(18/26) Installing findmnt (2.35.2-r0)
+(19/26) Installing mcookie (2.35.2-r0)
+(20/26) Installing hexdump (2.35.2-r0)
+(21/26) Installing lsblk (2.35.2-r0)
+(22/26) Installing libuuid (2.35.2-r0)
+(23/26) Installing libfdisk (2.35.2-r0)
+(24/26) Installing sfdisk (2.35.2-r0)
+(25/26) Installing cfdisk (2.35.2-r0)
+(26/26) Installing util-linux (2.35.2-r0)
+Executing busybox-1.31.1-r19.trigger
+Executing ca-certificates-20191127-r4.trigger
+OK: 30 MiB in 40 packages
+Removing intermediate container 241b58cb82f9
+ ---> 4074e3a0bf27
+Step 4/4 : ENTRYPOINT ["/bin/bash"]
+ ---> Running in 875b594b9039
+Removing intermediate container 875b594b9039
+ ---> 9610d0cf544e
+Successfully built 9610d0cf544e
+Successfully tagged blairy/pineal:20200917_005558
+20200917_005611 - Build completed successfully.
+
+
+Already up to date.
