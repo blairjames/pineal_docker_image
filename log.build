@@ -42797,3 +42797,106 @@ Successfully tagged blairy/pineal:20200926_192401
 
 
 Already up to date.
+[master 26ede23] Automatic build 20200926_192405
+ 1 file changed, 35 insertions(+)
+20200926_192410 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+28e8d54b305d: Preparing
+b343ddcee16c: Preparing
+50644c29ef5a: Preparing
+50644c29ef5a: Layer already exists
+28e8d54b305d: Layer already exists
+b343ddcee16c: Layer already exists
+20200926_192401: digest: sha256:3dd83e8e52faa1092c178f65a740c1a8e1b6bc3227e55d9813acab8bf9b73e8c size: 951
+20200926_192417 - Docker push completed successfully.
+
+
+20200926_192417 - All completed successfully
+20200926_202335 - Starting Build.
+
+20200926_202335 - Build FAILED!! Aborting.
+
+
+20200926_202337 - Starting Build.
+
+Sending build context to Docker daemon  55.62MB
+Step 1/4 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/4 : RUN apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/4 : RUN apk add --no-cache     vim     curl     shadow     git     util-linux     bash
+ ---> Running in c76f9da49d9a
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/community/x86_64/APKINDEX.tar.gz
+(1/31) Installing ncurses-terminfo-base (6.2_p20200523-r0)
+(2/31) Installing ncurses-libs (6.2_p20200523-r0)
+(3/31) Installing readline (8.0.4-r0)
+(4/31) Installing bash (5.0.17-r0)
+Executing bash-5.0.17-r0.post-install
+(5/31) Installing ca-certificates (20191127-r4)
+(6/31) Installing nghttp2-libs (1.41.0-r0)
+(7/31) Installing libcurl (7.69.1-r1)
+(8/31) Installing curl (7.69.1-r1)
+(9/31) Installing expat (2.2.9-r1)
+(10/31) Installing pcre2 (10.35-r0)
+(11/31) Installing git (2.26.2-r0)
+(12/31) Installing linux-pam (1.3.1-r4)
+(13/31) Installing shadow (4.8.1-r0)
+(14/31) Installing libblkid (2.35.2-r0)
+(15/31) Installing blkid (2.35.2-r0)
+(16/31) Installing libcap-ng (0.7.10-r1)
+(17/31) Installing setpriv (2.35.2-r0)
+(18/31) Installing libmount (2.35.2-r0)
+(19/31) Installing libsmartcols (2.35.2-r0)
+(20/31) Installing findmnt (2.35.2-r0)
+(21/31) Installing mcookie (2.35.2-r0)
+(22/31) Installing hexdump (2.35.2-r0)
+(23/31) Installing lsblk (2.35.2-r0)
+(24/31) Installing libuuid (2.35.2-r0)
+(25/31) Installing libfdisk (2.35.2-r0)
+(26/31) Installing sfdisk (2.35.2-r0)
+(27/31) Installing cfdisk (2.35.2-r0)
+(28/31) Installing util-linux (2.35.2-r0)
+(29/31) Installing xxd (8.2.0735-r0)
+(30/31) Installing lua5.3-libs (5.3.5-r6)
+(31/31) Installing vim (8.2.0735-r0)
+20200926_202401 - Starting Build.
+
+Sending build context to Docker daemon  55.63MB
+Step 1/4 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/4 : RUN apk update && apk upgrade
+ ---> Using cache
+ ---> 37bee122e2ee
+Step 3/4 : RUN apk add --no-cache     vim     curl     shadow     git     util-linux     bash
+Executing busybox-1.31.1-r19.trigger
+Executing ca-certificates-20191127-r4.trigger
+OK: 61 MiB in 45 packages
+ ---> Running in e7dee17f1adc
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/community/x86_64/APKINDEX.tar.gz
+Removing intermediate container c76f9da49d9a
+ ---> 3077ec8f7bc4
+Step 4/4 : ENTRYPOINT ["/bin/bash"]
+ ---> Running in ae9b76706b07
+Removing intermediate container ae9b76706b07
+ ---> 24416826f360
+Successfully built 24416826f360
+Successfully tagged blairy/pineal:20200926_202337
+20200926_202406 - Build completed successfully.
+
+
+(1/31) Installing ncurses-terminfo-base (6.2_p20200523-r0)
+(2/31) Installing ncurses-libs (6.2_p20200523-r0)
+(3/31) Installing readline (8.0.4-r0)
+(4/31) Installing bash (5.0.17-r0)
+Executing bash-5.0.17-r0.post-install
+(5/31) Installing ca-certificates (20191127-r4)
+(6/31) Installing nghttp2-libs (1.41.0-r0)
+(7/31) Installing libcurl (7.69.1-r1)
+(8/31) Installing curl (7.69.1-r1)
+(9/31) Installing expat (2.2.9-r1)
+(10/31) Installing pcre2 (10.35-r0)
+(11/31) Installing git (2.26.2-r0)
+Already up to date.
