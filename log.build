@@ -42900,3 +42900,47 @@ Executing bash-5.0.17-r0.post-install
 (10/31) Installing pcre2 (10.35-r0)
 (11/31) Installing git (2.26.2-r0)
 Already up to date.
+[master 99334db] Automatic build 20200926_202409
+ 2 files changed, 104 insertions(+)
+(12/31) Installing linux-pam (1.3.1-r4)
+(13/31) Installing shadow (4.8.1-r0)
+20200926_202414 - git completed successfully.
+The push refers to repository [docker.io/blairy/pineal]
+(14/31) Installing libblkid (2.35.2-r0)
+(15/31) Installing blkid (2.35.2-r0)
+(16/31) Installing libcap-ng (0.7.10-r1)
+(17/31) Installing setpriv (2.35.2-r0)
+(18/31) Installing libmount (2.35.2-r0)
+(19/31) Installing libsmartcols (2.35.2-r0)
+(20/31) Installing findmnt (2.35.2-r0)
+(21/31) Installing mcookie (2.35.2-r0)
+(22/31) Installing hexdump (2.35.2-r0)
+(23/31) Installing lsblk (2.35.2-r0)
+(24/31) Installing libuuid (2.35.2-r0)
+(25/31) Installing libfdisk (2.35.2-r0)
+86fb3d111026: Preparing
+b343ddcee16c: Preparing
+50644c29ef5a: Preparing
+(26/31) Installing sfdisk (2.35.2-r0)
+(27/31) Installing cfdisk (2.35.2-r0)
+(28/31) Installing util-linux (2.35.2-r0)
+(29/31) Installing xxd (8.2.0735-r0)
+(30/31) Installing lua5.3-libs (5.3.5-r6)
+(31/31) Installing vim (8.2.0735-r0)
+b343ddcee16c: Layer already exists
+50644c29ef5a: Layer already exists
+Executing busybox-1.31.1-r19.trigger
+Executing ca-certificates-20191127-r4.trigger
+OK: 61 MiB in 45 packages
+Removing intermediate container e7dee17f1adc
+ ---> 21db2ac05239
+Step 4/4 : ENTRYPOINT ["/bin/bash"]
+ ---> Running in 21da8b9c80ce
+Removing intermediate container 21da8b9c80ce
+ ---> 383cb43645a9
+Successfully built 383cb43645a9
+Successfully tagged blairy/pineal:20200926_202401
+20200926_202428 - Build completed successfully.
+
+
+Already up to date.
