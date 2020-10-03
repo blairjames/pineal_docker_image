@@ -1,6 +1,6 @@
 FROM alpine:latest
-RUN apk update && apk upgrade
-RUN apk add --no-cache \
+RUN apk update && apk upgrade && \
+    apk add --no-cache \
     vim \
     curl \ 
     shadow \
