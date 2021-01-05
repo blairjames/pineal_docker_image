@@ -111213,3 +111213,31 @@ Successfully tagged blairy/pineal:20210105_161801
 
 
 20210105_161802 - git
+[master 599d693] Automatic build 20210105_161802
+ 1 file changed, 28 insertions(+)
+20210105_161802 - git
+20210105_161802 - git failed!!
+The push refers to repository [docker.io/blairy/pineal]
+20210105_161802 - Docker push FAILED!!
+
+
+20210105_171801 - Starting Build.
+
+Sending build context to Docker daemon   11.2MB
+Step 1/4 : FROM alpine:latest
+ ---> a24bb4013296
+Step 2/4 : RUN apk update && apk upgrade &&     apk add --no-cache     curl     git     util-linux     bash
+ ---> Using cache
+ ---> d61f80d90ce9
+Step 3/4 : RUN echo "alias l='ls -lrth'" >> /root/.bashrc &&     echo "alias c='clear'" >> /root/.bashrc &&     echo "alias ll='ls -lth'" >> /root/.bashrc &&     echo "alias la='ls -larth'" >> /root/.bashrc
+ ---> Using cache
+ ---> 7d51bf2ee4c1
+Step 4/4 : ENTRYPOINT ["/bin/bash"]
+ ---> Using cache
+ ---> b37a2a4020a7
+Successfully built b37a2a4020a7
+Successfully tagged blairy/pineal:20210105_171801
+20210105_171802 - Build completed successfully.
+
+
+20210105_171802 - git
