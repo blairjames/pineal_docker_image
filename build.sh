@@ -23,7 +23,7 @@ logger () {
 # Exception Catcher
 except () {
     logger $1
-    return 1
+    exit 1
 }
 
 
@@ -33,7 +33,7 @@ logger "Starting Build.\n"
 
 
 # Build the image using timestamp as tag.
-if /usr/bin/docker build /home/docker/pineal_docker_image -t docker.io/blairy/pineal:$timestp >> $log; then
+if /usr/bin/docker build /home/docker/pineal_docker_image -t docker.io/blairy/pineal:$timestp --no-cache >> $log; then
     logger "Build completed successfully.\n\n"
 else
     logger "Build FAILED!! Aborting.\n\n"
@@ -80,7 +80,7 @@ fi
 
 
 # Prune
-/usr/bin/git gc --prune
+/usr/bin/git gc --prune || logger "ERROR! git-gc failed!"
 
 
 # All completed successfully
