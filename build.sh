@@ -6,12 +6,10 @@ source /root/.ssh/agent/root || . /root/.ssh/agent/root
 # Log file
 log="/home/docker/pineal_docker_image/log.build"
 
-
 # Generate timestamp
 timestamp () {
     date +"%Y%m%d_%H%M%S"
 }
-
 
 # Log and Print
 logger () {
@@ -19,36 +17,23 @@ logger () {
     printf "$(timestamp) - $1\n" >> $log
 }
 
-
 # Exception Catcher
 except () {
     logger $1
     exit 1
 }
 
-
 # Assign timestamp to ensure var is a static point in time.
 timestp=$(timestamp)
 logger "Starting Build.\n"
 
-
 # Build the image using timestamp as tag.
-if /usr/bin/docker build /home/docker/pineal_docker_image -t docker.io/blairy/pineal:$timestp --no-cache >> $log; then
+if /usr/bin/docker build /home/docker/pineal_docker_image -t docker.io/blairy/pineal:$timestp --no-cache --rm --pull >> $log; then
     logger "Build completed successfully.\n\n"
 else
     logger "Build FAILED!! Aborting.\n\n"
     exit 1
 fi
-
-
-# # Test - If test pass, commit and push to github and Dockerhub.
-# if /home/docker/python_3.8.5/tests.sh docker.io/blairy/python_3.8.5:$timestp >> $log; then
-#     logger "Tests completed successfully.\n\n"
-# else
-#     logger "******  WARNING!!  --  Tests FAILED!!  Aborting. ******\n\n"
-#     exit 1
-# fi
-
 
 # Push to github - Triggers builds in github and Dockerhub.
 # TODO: Make this a function and add better exception management.. 
@@ -61,14 +46,12 @@ git () {
     $git push >> $log || except "git push failed!"
 }
 
-
 # Run the git transactions
 if git; then
     logger "git completed successfully." 
 else
     logger "git failed!!" 
 fi
-
 
 # Push the new tag to Dockerhub.
 if docker push blairy/pineal:$timestp >> $log; then 
@@ -78,10 +61,8 @@ else
     exit 1 
 fi
 
-
 # Prune
-/usr/bin/git gc --prune || logger "ERROR! git-gc failed!"
-
+cd /home/docker/pineal_docker_image && /usr/bin/git gc --prune || logger "ERROR! git-gc failed!"
 
 # All completed successfully
 logger "All completed successfully"
