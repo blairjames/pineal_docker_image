@@ -12,7 +12,7 @@ RUN \
     bash \
     sudo
   
-# Add nonpriv user with sudo
+# Add nonpriv user with sudo access to APK
 ENV USER pineal
 ENV HOME /home/$USER
 ENV CMDS /sbin/apk
