@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-# Upgrade and install packages
+# Upgrade and install packages.
 RUN \
     apk update --no-cache && \ 
     apk upgrade --no-cache && \
@@ -12,7 +12,7 @@ RUN \
     bash \
     sudo
   
-# Add nonpriv user with sudo access to APK
+# Add nonpriv user with sudo access to APK.
 ENV USER pineal
 ENV HOME /home/$USER
 RUN \
