@@ -1,13 +1,29 @@
 FROM alpine:latest
-RUN apk update --no-cache && apk upgrade --no-cache && \
+
+# Upgrade and install packages
+RUN \
+    apk update --no-cache && \ 
+    apk upgrade --no-cache && \
     apk add --no-cache \
     curl \ 
     git \
     util-linux \
-    bash && \
-    echo "alias l='ls -lrth'" >> /root/.bashrc && \
-    echo "alias c='clear'" >> /root/.bashrc && \
-    echo "alias ll='ls -lth'" >> /root/.bashrc && \
-    echo "alias la='ls -larth'" >> /root/.bashrc
-ENTRYPOINT ["/bin/bash"]
+    wget \
+    bash \
+    sudo
+  
+# Add nonpriv user with sudo access to APK
+ENV USER pineal
+ENV HOME /home/$USER
+RUN \
+    addgroup -g 1000 $USER && \
+    adduser -G $USER --home $HOME --shell '/bin/bash' $USER -D && \
+    echo "$USER ALL=(ALL:ALL) NOPASSWD: /sbin/apk" > /etc/sudoers.d/$USER && \
+    chmod 440 /etc/sudoers.d/$USER && \ 
+    echo "alias l='ls -lrth'" >> $HOME/.bashrc && \
+    echo "alias c='clear'" >> $HOME/.bashrc
 
+    USER $USER
+    WORKDIR $HOME
+
+ENTRYPOINT ["/bin/bash"]
