@@ -2,21 +2,31 @@
 
 build() {
   local path
-  path=$1
-  echo $path
-  sudo docker build -t docker.io/blairy/pineal:latest $path
+  local image_name
+  path="$1"
+  image_name="$2"
+  readonly path
+  readonly image_name
+  sudo docker build --compress --pull \
+    -t "${image_name}" "${path}"
 }
 
 push() {
-  docker push blairy/pineal:latest
+  local image
+  image="$1"
+  readonly image
+  sudo docker push "${image}"
 }
 
 main() {
   local path
-  path=$1
-  build $path;
-  push;
-  echo "Done! $(date)" >> $path/log  
+  local image_name
+  path="${USERHOME}"/docker/pineal
+  image_name="docker.io/blairy/pineal:latest"
+  readonly path
+  readonly image_name
+  build "${path}" "${image_name}" || exit 1
+  push "${image_name}" || exit 1
 }
 
-main $1;
+main "$@"
