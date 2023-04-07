@@ -20,11 +20,16 @@ push() {
 
 main() {
   local path
+  local timestamp
   local image_name
   path="${USERHOME}"/docker/pineal
-  image_name="docker.io/blairy/pineal:latest"
   readonly path
+  timestamp=$(/usr/bin/date +%Y%m%d_%H%M)
+  readonly timestamp
+  echo 'Timestamp: '"${timestamp}"
+  image_name='docker.io/blairy/pineal:'"${timestamp}"
   readonly image_name
+  echo 'image_name: '"${image_name}"
   build "${path}" "${image_name}" || exit 1
   push "${image_name}" || exit 1
 }
